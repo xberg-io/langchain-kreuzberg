@@ -6,13 +6,7 @@ build-backend = "hatchling.build"
 packages = ["src/langchain_xberg"]
 
 [tool.hatch.build.targets.sdist]
-include = [
-    "src/langchain_xberg",
-    "CHANGELOG.md",
-    "LICENSE",
-    "README.md",
-    "pyproject.toml",
-]
+include = ["src/langchain_xberg", "CHANGELOG.md", "LICENSE", "README.md", "pyproject.toml"]
 
 [project]
 name = "langchain-xberg"
@@ -51,20 +45,10 @@ classifiers = [
     "Topic :: Text Processing :: Indexing",
     "Typing :: Typed",
 ]
-dependencies = [
-    "langchain-core>=1.0,<2.0",
-    "xberg>=1.0.0",
-]
+dependencies = ["langchain-core>=1.0,<2.0", "xberg>=1.0.0"]
 
 [dependency-groups]
-dev = [
-    "pytest>=9.0",
-    "pytest-asyncio>=0.24",
-    "pytest-cov>=6.0",
-    "ruff>=0.14",
-    "mypy>=1.19",
-    "pre-commit>=4.0",
-]
+dev = ["pytest>=9.0", "pytest-asyncio>=0.24", "pytest-cov>=6.0", "ruff>=0.14", "mypy>=1.19", "pre-commit>=4.0"]
 
 [project.urls]
 Homepage = "https://github.com/xberg-io/langchain-xberg"
