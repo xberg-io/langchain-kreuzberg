@@ -4,6 +4,8 @@ from collections.abc import AsyncIterator, Iterator
 from pathlib import Path
 from typing import Any
 
+from langchain_core.document_loaders import BaseLoader
+from langchain_core.documents import Document
 from xberg import (
     ExtractionConfig,
     ExtractionResult,
@@ -15,8 +17,6 @@ from xberg import (
     extract_file,
     extract_file_sync,
 )
-from langchain_core.document_loaders import BaseLoader
-from langchain_core.documents import Document
 
 
 class XbergLoader(BaseLoader):

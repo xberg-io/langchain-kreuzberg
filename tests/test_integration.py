@@ -3,8 +3,8 @@
 from pathlib import Path
 
 import pytest
-from xberg import XbergError
 from langchain_core.documents import Document
+from xberg import XbergError
 
 from langchain_xberg import XbergLoader
 
